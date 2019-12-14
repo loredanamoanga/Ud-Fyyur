@@ -1,4 +1,8 @@
-.idea/
+
 env/
 migrations/
-_pycache_/
+__pycache__/
+.idea/
+
+
+
