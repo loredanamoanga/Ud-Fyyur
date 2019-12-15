@@ -119,7 +119,7 @@ class VenueForm(Form):
         'facebook_link', validators=[URL()]
     )
     seeking_talent = SelectField(
-        'seeking_talent', validators=[DataRequired()],
+        'seeking_talent',
         choices=[
             (True, 'Yes'),
             (False, 'No')
@@ -231,7 +231,7 @@ class ArtistForm(Form):
     )
 
     seeking_venue = SelectField(
-        'seeking_venue', validators=[DataRequired()],
+        'seeking_venue',
         choices=[
             (True, 'Yes'),
             (False, 'No')
