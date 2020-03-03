@@ -46,6 +46,7 @@
             {{ form.seeking_description(class_ = 'form-control', placeholder='Let venues know what you are looking for!', autofocus = true, value=artist.seeking_description) }}
         </div>
         <input type="submit" value="Edit Artist" class="btn btn-primary btn-lg btn-block">
+            {{ form.csrf_token() }}
     </form>
 </div>
 {% endblock %}

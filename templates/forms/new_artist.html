@@ -47,6 +47,8 @@
             for!', autofocus = true) }}
         </div>
         <input type="submit" value="Create Artist" class="btn btn-primary btn-lg btn-block">
+        {{ form.csrf_token() }}
+
     </form>
 </div>
 {% endblock %}
